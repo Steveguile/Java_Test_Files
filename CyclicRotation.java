@@ -7,8 +7,8 @@
 class Solution {
     public static void main(String[] args) {
         Solution test = new Solution();
-        int[] array = {};
-        int[] result = test.solution(array, 42);
+        int[] array = {3, 8, 9, 7, 6};
+        int[] result = test.solution(array, 3);
     }
 
     public int[] solution(int[] A, int K) {
