@@ -1,10 +1,3 @@
-// you can also use imports, for example:
-// import java.util.*;
-
-// you can write to stdout for debugging purposes, e.g.
-// System.out.println("this is a debug message");
-
-import java.util.Arrays;
 
 class Solution {
     public static void main(String[] args) {
@@ -15,7 +8,7 @@ class Solution {
 
     public int solution(int[] A) {
         int n = A.length + 1;
-        long sumElements = (n * (1 + n)) / 2; // Sum of all array elements
+        long sumElements = (n * (1 + n)) / 2; // Sum of all array elements (arithmetic progression)
         long sumArray = 0; // Sum of values in array
 
         // Add all values in array
