@@ -1,4 +1,4 @@
-package worksheet;
+package worksheet.worksheets;
 import java.util.*;
 
 /*
@@ -6,11 +6,7 @@ import java.util.*;
  * Performance: 60%
  */
 
-public class Worksheet {
-    public static void main(String[] args) {
-        int[] array = {1, 3, 1, 4, 2, 3, 5, 4};
-        int result = Worksheet.solution(5, array);
-    }
+public class FrogRiverOne {
 
     public static int solution(int X, int[] A) {
 
