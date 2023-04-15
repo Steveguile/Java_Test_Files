@@ -1,10 +1,11 @@
-package worksheet;
-import java.util.*;
+package worksheet.worksheets;
 
 /* 
+ * Correctness: 100%
+ * Performance: 100%
  */
 
-public class Worksheet {
+public class Distinct {
 
     public static void main(String args[]) {
         int[] array = {2, 1, 1, 2, 3, 1};
@@ -13,18 +14,23 @@ public class Worksheet {
 
     public static int solution(int[] A) {
 
-        int maxA = 0; // Max value in A
+        int minA = 0, maxA = 0; // Min and Max value in A
 
         for (int value: A) {
             if (value > maxA) {
                 maxA = value;
+            } else if (value < minA) {
+                minA = value;
             }
         }
 
-        int[] count = new int[maxA + 1]; // count of each occurence of value from 0 to A[] maxValue
+        minA = Math.abs(minA);
+        // count of each occurence of value from minA being zero index 
+        // to max A
+        int[] count = new int[minA + maxA + 1]; 
 
         for (int i = 0; i < A.length; i++) {
-            count[A[i]] += 1;
+            count[minA + A[i]] += 1;
         }
 
         int uniqueCount = 0;
