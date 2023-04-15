@@ -1,10 +1,10 @@
-package worksheet;
+package worksheet.worksheets;
 import java.util.*;
 
 /* 
  */
 
-public class Worksheet {
+public class CountDiv {
 
     public static int solution(int A, int B, int K) {
         // Take array length 9

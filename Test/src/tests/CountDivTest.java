@@ -2,28 +2,28 @@ package tests;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import worksheet.Worksheet;
+import worksheet.worksheets.CountDiv;
 
-public class WorksheetTest {
+public class CountDivTest {
  
     @Test
     public void test1() {
-        assertEquals(3, Worksheet.solution(6, 11, 2)); 
+        assertEquals(3, CountDiv.solution(6, 11, 2)); 
     }
     
     @Test
     public void test2() {
-        assertEquals(1, Worksheet.solution(10, 10, 5)); 
+        assertEquals(1, CountDiv.solution(10, 10, 5)); 
     }
     
     @Test
     public void test3() {
-        assertEquals(0, Worksheet.solution(10, 10, 7)); 
+        assertEquals(0, CountDiv.solution(10, 10, 7)); 
     }
     
     @Test
     public void test4() {
-        assertEquals(0, Worksheet.solution(10, 10, 20)); 
+        assertEquals(0, CountDiv.solution(10, 10, 20)); 
     }
 
     // A = 6, B = 9, K = 3
@@ -33,7 +33,7 @@ public class WorksheetTest {
     // 1 - 1 + 2 = 2
     @Test
     public void test5() {
-        assertEquals(2, Worksheet.solution(6, 9, 3)); 
+        assertEquals(2, CountDiv.solution(6, 9, 3)); 
     }
     
 }
