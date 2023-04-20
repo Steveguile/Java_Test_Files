@@ -6,12 +6,7 @@ package worksheet.worksheets;
  */
 
 public class Distinct {
-
-    public static void main(String args[]) {
-        int[] array = {2, 1, 1, 2, 3, 1};
-        solution(array);
-    }
-
+    
     public static int solution(int[] A) {
 
         int minA = 0, maxA = 0; // Min and Max value in A

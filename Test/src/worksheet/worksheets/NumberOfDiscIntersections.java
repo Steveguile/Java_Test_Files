@@ -1,4 +1,4 @@
-package worksheet;
+package worksheet.worksheets;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * See https://www.youtube.com/watch?v=HV8tzIiidSw&ab_channel=BogdanKotzev
  */
 
-public class Worksheet {
+public class NumberOfDiscIntersections {
 
     public static void main(String args[]) {
     }
