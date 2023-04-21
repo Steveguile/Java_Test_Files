@@ -1,4 +1,4 @@
-package worksheet;
+package worksheet.worksheets;
 
 import java.util.LinkedList;
 
@@ -7,7 +7,7 @@ import java.util.LinkedList;
  * Performance: 100%
  */
 
-public class Worksheet {
+public class Brackets {
 
     public static void main(String args[]) {
     }

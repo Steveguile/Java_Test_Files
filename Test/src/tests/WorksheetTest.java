@@ -8,15 +8,47 @@ public class WorksheetTest {
 
     @Test 
     public void test1() {
-        int[] input = {1, 5, 2, 1, 4, 0}; 
-        assertEquals(11, Worksheet.solution(input));
+        assertEquals(1, Worksheet.solution("[()]"));
     }
 
     @Test 
     public void test2() {
-        int[] input = {1, 2147483647, 0}; 
-        assertEquals(2, Worksheet.solution(input));
+        assertEquals(0, Worksheet.solution("[(()]"));
     }
 
-}
+    @Test 
+    public void test3() {
+        assertEquals(0, Worksheet.solution("[())]"));
+    }
 
+    @Test 
+    public void test4() {
+        assertEquals(1, Worksheet.solution(""));
+    }
+
+    @Test 
+    public void test5() {
+        assertEquals(0, Worksheet.solution("}]][[{"));
+    }
+
+    @Test 
+    public void test6() {
+        assertEquals(1, Worksheet.solution("()[]"));
+    }
+
+    @Test 
+    public void test7() {
+        assertEquals(0, Worksheet.solution("([)()]"));
+    }
+
+    @Test
+    public void test8() {
+        assertEquals(1, Worksheet.solution("{[()()]}"));
+    }
+
+    @Test
+    public void test9() {
+        assertEquals(0, Worksheet.solution(")()"));
+    }
+    
+}
