@@ -1,12 +1,11 @@
-package worksheet;
-
+package worksheet.worksheets;
 
 /* 
- * Correctness: 
- * Performance: 
+ * Correctness: 100%
+ * Performance: 100%
  */
 
-public class Worksheet {
+public class EquiLeader {
 
     public static void main(String args[]) {
     }

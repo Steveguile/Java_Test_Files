@@ -1,8 +1,8 @@
 package worksheet.worksheets;
 
 /* 
- * Correctness: 
- * Performance: 
+ * Correctness: 100%
+ * Performance: 100%
  */
 
 public class ManhattenSkyline {
